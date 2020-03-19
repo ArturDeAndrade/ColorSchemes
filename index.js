@@ -1,6 +1,8 @@
 const buttonBar = document.getElementById('buttonBar')
 const buttonList = document.getElementById('buttonList')
 
+// This function creates a new button(with its own label and id), 
+// adds it to the page and also creates a function to change the page theme(this function works by adding the className parameter to the body element).
 function colorButton(name, className, id) {
     this.button = document.createElement('button')
     this.label = document.createTextNode(name)
@@ -36,3 +38,6 @@ natureB.button.addEventListener('click', natureB.changeColorScheme)
 
 const luizaB = new colorButton('Luiza Theme', 'luiza-theme', 'luizaTheme')
 luizaB.button.addEventListener('click', luizaB.changeColorScheme)
+
+// const 'button-variable' = new colorButton("button label", "class-name", "button id")
+// 'button-variable'.button.addEventListener('click', 'button-variable'.changeColorScheme)
