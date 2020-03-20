@@ -37,7 +37,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main-header {
-    position: relative;
+    position: fixed;
+    z-index: 1;
 
     display: flex;
     justify-content: space-between;
@@ -124,13 +125,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-bar {
-    position: absolute;
+    position: fixed;
 
     width: 5rem;
     height: inherit;
     padding: 0;
     border-right: 1px solid var(--outline-color);
     margin: 0;
+    margin-top: 5rem;
 
     background-color: var(--secondary-color);
     transition: var(--transition-delay);
@@ -147,6 +149,7 @@ body::-webkit-scrollbar-thumb {
 
 .main-content {
     position: relative;
+    top: 5rem;
     left: 5rem;
 
     padding: 3rem;
