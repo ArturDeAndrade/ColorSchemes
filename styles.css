@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb {
 
 .main-header {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 
     display: flex;
     justify-content: space-between;
@@ -126,6 +126,7 @@ body::-webkit-scrollbar-thumb {
 
 .nav-bar {
     position: fixed;
+    z-index: 1;
 
     width: 5rem;
     height: inherit;
