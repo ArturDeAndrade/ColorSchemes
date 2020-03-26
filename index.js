@@ -1,3 +1,4 @@
+const body = document.body
 const buttonBar = document.getElementById('buttonBar')
 const buttonList = document.getElementById('buttonList')
 
